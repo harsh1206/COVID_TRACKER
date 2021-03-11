@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import {Cards,Charts,CountryPicker} from './components';
+import {Cards,Charts,CountryPicker,Github} from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
-import coronaImage from '../src/images/image.png'
+import coronaImage from '../src/images/image.png';
+
 
 export default class App extends Component {
     
@@ -34,6 +35,7 @@ export default class App extends Component {
             <Cards data={data} />
             <CountryPicker handleCountryChange={this.handleCountryChange} />
             <Charts data={data} country={country} />
+            <Github />
           </div>
         );
     }
