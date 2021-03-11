@@ -3,10 +3,10 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 function Github() {
     return (
-        <div>
-            
-        </div>
-    )
+      <a href="https://github.com/harsh1206/COVID_TRACKER">
+        <GitHubIcon />
+      </a>
+    );
 }
 
 export default Github

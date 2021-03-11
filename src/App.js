@@ -31,11 +31,15 @@ export default class App extends Component {
 
         return (
           <div className={styles.container}>
-            <img className={styles.image} src={coronaImage} alt="COVID-19 IMG"/>
+            <Github />
+            <img
+              className={styles.image}
+              src={coronaImage}
+              alt="COVID-19 IMG"
+            />
             <Cards data={data} />
             <CountryPicker handleCountryChange={this.handleCountryChange} />
             <Charts data={data} country={country} />
-            <Github />
           </div>
         );
     }
